@@ -1,0 +1,65 @@
+<html>
+<head>
+
+<link type="text/css" rel="stylesheet" href="../css/subfr.css"/>
+
+</head>
+<body>
+
+
+<div class="area">
+
+
+<div class="sub_top">
+<ul>
+<li><a href="new.html">New</a></li>
+<li><a href="edit.html">Update</a></li>
+<li><a href="delete.html">Delete</a></li>
+<li><a href="show_db.html">Show_DataBase</a></li>
+</ul>
+</div>
+
+<div class="midle">
+
+
+<?php
+
+$con=mysqli_connect("localhost","root","");
+	mysqli_select_db($con,"exdb");
+
+$has="SELECT * FROM tbl1";
+$out=mysqli_query($con,$has);
+
+echo "<table border=5>";
+
+
+for($i=0;$i<mysqli_num_fields($out);$i++){
+	
+	echo "<th>".(mysqli_fetch_field_direct($out,$i)->name)."</th>";
+	
+	}
+while($rows=mysqli_fetch_array($out,MYSQLI_ASSOC)){
+	
+	echo "<tr>\n";
+	foreach($rows as $values){
+	echo "<td>".$values."</td>\n";
+	}
+	echo "</tr>\n";
+	
+	}
+echo "</table>";
+
+mysqli_free_result($out);
+//mysqli_close("$con");
+
+?>
+
+
+</div>
+
+
+</div>
+
+
+</body>
+</html>

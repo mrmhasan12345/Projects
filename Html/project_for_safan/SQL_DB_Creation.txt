@@ -1,0 +1,21 @@
+CREATE DATABASE LeaveManagement;
+
+
+CREATE TABLE users(
+    U_Id varchar(15) NOT NULL,
+    U_Nic varchar(12) NOT NULL,
+    U_First_Name varchar(155) NOT NULL,
+    U_Last_Name varchar(155) NOT NULL,
+    U_Name varchar(255) NOT NULL,
+    U_Password varchar(100) NOT NULL,
+    U_Email varchar(100) NOT NULL,
+    U_Contact_No varchar(20) NOT NULL,
+    U_Profile varchar(255),
+    U_Type varchar(10) NOT NULL,
+    UNIQUE(U_Email),
+    UNIQUE(U_Name),
+    PRIMARY KEY(U_Id)    
+)
+
+
+

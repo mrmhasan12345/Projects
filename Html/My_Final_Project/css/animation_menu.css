@@ -1,0 +1,138 @@
+@keyframes bounceIn{
+	0%{
+		opacity:0;
+		transform:rotateX(-50deg) translateY(-30px) rotateY(50deg);
+		}
+	30%{
+		opacity:0.5;
+		}
+	100%{
+		transform:rotateX(0deg) translateY(0px);
+		opacity:1;
+		}
+	}
+
+
+.menu>ul li:hover>ul li{
+	opacity:0;
+	}
+
+
+.menu>ul li:hover>ul li:nth-child(1){
+	
+	transform-origin:center;
+	-webkit-animation-name:bounceIn;
+		animation-name:bounceIn;
+	-webkit-animation-duration:300ms;
+		animation-duration:300ms;
+	-webkit-animation-delay:0;
+		animation-delay:0;
+	-webkit-animation-timing-function:0.5s;
+		animation-timing-function:0.5s;
+	-webkit-animation-fill-mode:forwards;
+		animation-fill-mode:forwards;
+
+				
+	}
+
+.menu>ul li:hover>ul li:nth-child(2){
+	
+	transform-origin:center;
+	-webkit-animation-name:bounceIn;
+		animation-name:bounceIn;
+	-webkit-animation-duration:300ms;
+		animation-duration:300ms;
+	-webkit-animation-delay:300ms;
+		animation-delay:300ms;
+	-webkit-animation-timing-function:0.5s;
+		animation-timing-function:0.5s;
+	-webkit-animation-fill-mode:forwards;
+		animation-fill-mode:forwards;
+
+				
+	}
+
+.menu>ul li:hover>ul li:nth-child(3){
+	
+	transform-origin:center;
+	-webkit-animation-name:bounceIn;
+		animation-name:bounceIn;
+	-webkit-animation-duration:300ms;
+		animation-duration:300ms;
+	-webkit-animation-delay:650ms;
+		animation-delay:650ms;
+	-webkit-animation-timing-function:0.5s;
+		animation-timing-function:0.5s;
+	-webkit-animation-fill-mode:forwards;
+		animation-fill-mode:forwards;
+
+				
+	}
+
+.menu>ul li:hover>ul li:nth-child(4){
+	
+	transform-origin:center;
+	-webkit-animation-name:bounceIn;
+		animation-name:bounceIn;
+	-webkit-animation-duration:300ms;
+		animation-duration:300ms;
+	-webkit-animation-delay:1s;
+		animation-delay:1s;
+	-webkit-animation-timing-function:0.5s;
+		animation-timing-function:0.5s;
+	-webkit-animation-fill-mode:forwards;
+		animation-fill-mode:forwards;
+
+				
+	}
+
+.menu>ul li:hover>ul li:nth-child(5){
+	
+	transform-origin:center;
+	-webkit-animation-name:bounceIn;
+		animation-name:bounceIn;
+	-webkit-animation-duration:300ms;
+		animation-duration:300ms;
+	-webkit-animation-delay:1.35s;
+		animation-delay:1.35s;
+	-webkit-animation-timing-function:0.5s;
+		animation-timing-function:0.5s;
+	-webkit-animation-fill-mode:forwards;
+		animation-fill-mode:forwards;
+
+				
+	}
+
+.menu>ul li:hover>ul li:nth-child(6){
+	
+	transform-origin:center;
+	-webkit-animation-name:bounceIn;
+		animation-name:bounceIn;
+	-webkit-animation-duration:300ms;
+		animation-duration:300ms;
+	-webkit-animation-delay:1.7s;
+		animation-delay:1.7s;
+	-webkit-animation-timing-function:0.5s;
+		animation-timing-function:0.5s;
+	-webkit-animation-fill-mode:forwards;
+		animation-fill-mode:forwards;
+
+				
+	}
+
+.menu>ul li:hover>ul li:nth-child(7){
+	
+	transform-origin:center;
+	-webkit-animation-name:bounceIn;
+		animation-name:bounceIn;
+	-webkit-animation-duration:300ms;
+		animation-duration:300ms;
+	-webkit-animation-delay:2s;
+		animation-delay:2s;
+	-webkit-animation-timing-function:0.5s;
+		animation-timing-function:0.5s;
+	-webkit-animation-fill-mode:forwards;
+		animation-fill-mode:forwards;
+
+				
+	}

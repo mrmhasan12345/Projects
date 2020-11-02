@@ -1,0 +1,14 @@
+#bigad_display
+{
+margin-left:120px;
+text-align:center;
+margin-top:30px;
+}
+@media only screen and (max-width: 960px)
+{
+#bigad_display
+{
+visibility:hidden;	
+display:none;
+}
+}

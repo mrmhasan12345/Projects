@@ -1,0 +1,51 @@
+CREATE TABLE medicine(
+
+    Supplier_Id int
+    Genetic_Id varchar()
+    Genetic_Name varchar()
+    Main_Category_Id varchar()
+    Main_Category_Name varchar()
+    Sub-Category_Id varchar()
+    Sub_Category_Name varchar()
+    Drug_Type_Id varchar()
+    Drug_Type varchar()
+     
+)
+
+
+
+
+
+CREATE TABLE medicine(
+
+    Supplier_Id int NOT NULL,
+    Genetic_Id int NOT NULL,
+    Main_Category_Id int NOT NULL,
+    Sub_Category_Id int NOT NULL,
+    Drug_Type_Id int NOT NULL,
+    Medicine_Id int NOT NULL,
+    PRIMARY KEY(Medicine_Id),
+    FOREIGN KEY(Supplier_Id) REFERANCE 
+     
+)
+
+
+
+
+
+
+
+
+CREATE TABLE medicine(
+    
+    Medicine_Id int NOT NULL AUTO_INCREMENT,
+    Drug_Type_Id varchar(25) NOT NULL,
+    Main_Category_Id varchar(25),
+    Sub_Category_Id varchar(25),
+    Genetic_Id int,
+    Trade_Name varchar(150) NOT NULL,
+    
+                            
+    
+
+)

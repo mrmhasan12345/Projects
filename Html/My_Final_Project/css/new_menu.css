@@ -1,0 +1,148 @@
+.home_top .menu ul{
+
+	padding:0;
+	list-style-type:none;
+
+	
+	}
+
+.home_top .menu>ul>li>a{
+	
+	text-decoration:none;
+	color:black;
+	display:inline-block;
+	
+	}
+
+.home_top .menu>ul>li>ul li a{
+	
+	text-decoration:none;
+	color:white;
+	display:block;
+	
+	}
+
+.home_top .menu>ul .submenu{
+	
+	margin-top:5px;
+	padding:0 1px 0 1px;
+	display:block;
+	list-style-type:none;
+	position:absolute;
+	//opacity:0.8;
+	//filter:alpha(opacity=50);
+	
+	}
+
+.home_top .menu>ul>li a:hover{
+	
+	-webkit-border-radius:10px;
+	background-color:orange;
+
+	}
+
+.home_top .menu>ul>li>ul li a:hover{
+	
+	-webkit-border-radius:10px;
+	background-color:red;
+
+	}
+
+.home_top .menu>ul>li{
+	
+	position:absolute;
+	left:2px;
+	top:-15px;
+	float:left;
+	font-size:17px;
+	line-height:25px;
+	text-align:center;
+	//opacity:0.7;
+	//filter:alpha(opacity=50);
+	border:1px solid #F0AA81;
+	background:rgba(130,70,140,0.8);
+	position:relative;
+	margin:2px;
+	padding:1px;
+	-webkit-border-radius:10px;
+	box-shadow:1px 1px 2px 2px #fca;
+	}
+
+.home_top .menu>ul>li>ul li{
+	
+	display:none;
+	list-style-type:none;
+	text-align:left;
+	margin:1px;
+	padding:0 2px 0 2px;
+	background-color:rgba(29,49,55,0.8);
+	//height:30px;
+	-webkit-border-radius:10px;
+	white-space:nowrap;
+	
+	
+	}
+
+.home_top .menu>ul li:hover>ul li{
+	
+	display:block;
+	
+	}
+
+/*-----------------------------		header navigation	-----------------------------------*/
+
+
+.top_nav_bar>.top_nav>.col11{
+	
+	float:left;
+	white-space:nowrap;
+	width:fit-content;
+	height:100%;
+	font-size:18px;
+}
+
+
+.top_nav_bar>.top_nav .bar{
+
+	width:3px;
+	float:left;
+	margin:0 5px;
+	background:black;
+	height:100%;
+}
+
+.top_nav_bar>.top_nav>.col11>a{
+	text-decoration:none;
+	color:#90801F;
+}
+
+.top_nav_bar>.top_nav>.col11>a:hover{
+	
+	color:#A9CDEE;
+}
+
+.top_nav_bar>.top_nav>.col11>a:active{
+	
+	color:#F60DE4;
+}
+
+.top_nav_bar{
+	
+	width:100%;
+	height:22px;
+	background:transparent;
+	padding:0;
+	margin:0;
+}
+
+.top_nav{
+
+	float:right;
+	width:fit-content;
+	height:100%;
+	background:transparent;
+	padding:0;
+	margin-right:5px;
+	
+	}
+

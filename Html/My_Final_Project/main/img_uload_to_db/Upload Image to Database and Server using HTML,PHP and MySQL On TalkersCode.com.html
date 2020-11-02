@@ -1,0 +1,487 @@
+
+<!-- saved from url=(0115)http://talkerscode.com/webtricks/upload%20image%20to%20database%20and%20server%20using%20HTML,PHP%20and%20MySQL.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="Description" content="How to upload images to database and server using HTML,PHP and MySQL on TalkersCode.com">
+<meta name="Keywords" content="Upload Image to Database and Server using HTML and PHP and MySQL,upload image using html,upload html using php,upload image to server using php,upload image to database using php,upload image to server using php,html file upload ,file upload html ,upload file html ,upload html ,html upload ,html form file upload ,html file upload form ,html form upload file ,html upload file to server ,file upload form html ,html upload button ,upload file html code ,html upload file form ,file upload html code ,html file uploader ,html upload file code ,upload html code ,html code to upload a file, html code for upload file ,html code for upload image ,form file upload html ,html code for file upload ,html file upload code, html php file upload ,upload photo html code ,html file upload php ,html php upload file ,file upload code in html ,html upload image to server ,upload file html php ,php upload script ,php file upload script ,upload script ,file upload script ,upload php script ,php upload file script ,upload script php ,file upload php script ,upload file php script ,script upload ,script upload php ">
+<meta property="og:image" content="http://talkerscode.com/webtricks/images/upload_image.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@TalkersCode">
+<meta name="twitter:title" content="Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com">
+<meta name="twitter:description" content="How to upload images to database and server using HTML,PHP and MySQL on TalkersCode.com">
+<meta name="twitter:image" content="http://talkerscode.com/webtricks/images/upload_image.jpg">
+
+<link rel="stylesheet" type="text/css" href="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/header.css">
+<link rel="stylesheet" type="text/css" href="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/footer.css">
+<link rel="stylesheet" type="text/css" href="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/webtrick_tut.css">
+<link rel="stylesheet" type="text/css" href="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/big_display_style.css">
+<link rel="stylesheet" type="text/css" href="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/small_display_style.css">
+<link rel="stylesheet" type="text/css" href="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/middle_display_style.css">
+<script async="" src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/analytics.js.download"></script><script src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/talkerscodecom.js.download" type="text/javascript" async=""></script><script type="text/javascript" src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/jquery.js.download"></script>
+
+<link rel="stylesheet" type="text/css" href="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/prettify.css">
+
+<script src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/embed.js.download" data-timestamp="1500303736747"></script><link rel="stylesheet" href="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/talkerscodecom.css"><link rel="preload" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.e52b2f99308b09ef7684f62bab4d6f07.css"><link rel="preload" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.b2c634a04700d668e072b1d5f9909f67.js"><link rel="preload" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.f2dfc3de47cd3ef46cabc5af86dfa242.js"><link rel="preload" as="script" href="https://disqus.com/next/config.js"><script src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/alfie.f51946af45e0b561c60f768335c9eb79.js.download" async="" charset="UTF-8"></script></head>
+<body>
+
+<script>
+function showmenu_links()
+{
+$('#mobile_menu_links').animate({width:'toggle'});
+}
+function close_menu()
+{
+	$('#mobile_menu_links').hide();
+}
+function show_search()
+{
+	$('#search_form').toggle();
+}
+function checksearch()
+{
+var sval=document.getElementById("search_query");
+if(sval.value=="")
+{
+	return false;
+}
+else
+{
+	return true;
+}
+}
+</script>
+
+
+<div id="sponsored_review_div">
+<p>For Sponsored Review Contact Here - <u><b>talkerscode@gmail.com</b></u></p>
+</div>
+
+<div id="header_wrapper">
+
+	<div id="header">
+	
+		<img src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/menu_icon.png" id="menu_icon" onclick="showmenu_links();">
+		
+		<a href="http://talkerscode.com/index.php" id="sitename">TalkersCode</a>
+		<div id="menu_links">
+			<li class="main_link"><a class="main_anchor">Learn Web Development</a>
+			<ul id="sub_menu_link">
+			<li><a href="http://talkerscode.com/html/html.php">HTML</a></li>
+			<li><a href="http://talkerscode.com/css/css.php">CSS</a></li>
+			<li><a href="http://talkerscode.com/javascript/javascript.php">JavaScript</a></li>
+			<li><a href="http://talkerscode.com/jquery/jquery.php">jQuery</a></li>
+			<li><a href="http://talkerscode.com/php/php.php">PHP</a></li>
+			<li><a href="http://talkerscode.com/mysql/mysql.php">MySQL</a></li>
+			</ul>
+			</li>
+			<li class="main_link"><a class="main_anchor" href="http://talkerscode.com/webtricks.php">Tutorials</a>
+			</li><li class="main_link"><a class="main_anchor" href="http://talkerscode.com/reviews.php">Reviews</a>
+			</li><li class="main_link"><a class="main_anchor" href="http://talkerscode.com/advertise.php">Advertise</a>
+			
+		</li></div>
+
+		<input type="button" onclick="show_search();" id="search_button" value="SEARCH">
+
+		<div id="mobile_menu_links">
+			<li id="close_button" onclick="close_menu();">← CLOSE</li>
+			<li><a href="http://talkerscode.com/html/html.php">HTML</a></li>
+			<li><a href="http://talkerscode.com/css/css.php">CSS</a></li>
+			<li><a href="http://talkerscode.com/javascript/javascript.php">JavaScript</a></li>
+			<li><a href="http://talkerscode.com/jquery/jquery.php">jQuery</a></li>
+			<li><a href="http://talkerscode.com/php/php.php">PHP</a></li>
+			<li><a href="http://talkerscode.com/mysql/mysql.php">MySQL</a></li>
+			<li><a href="http://talkerscode.com/reviews.php">Reviews</a></li>
+			<li><a href="http://talkerscode.com/webtricks.php">Tutorials</a></li>
+			<li><a href="http://talkerscode.com/advertise.php">Advertise</a>
+		</li></div>
+
+	</div><!--end of header-->
+	
+</div><!--end of header_wrapper-->
+
+<div id="search_form">
+	<form methof="get" action="http://talkerscode.com/search.php" onsubmit="return checksearch();">
+		<input type="text" id="search_query" name="search" placeholder="Enter Text To Search" autofocus="">
+	</form>
+</div>
+
+
+<!--FoxPush Push Notification-->
+<script type="text/javascript">
+(function(){
+var foxscript = document.createElement('script');
+foxscript.src = '//js.foxpush.com/talkerscodecom.js?v='+Math.random();
+foxscript.type = 'text/javascript';
+foxscript.async = 'true';
+var fox_s = document.getElementsByTagName('script')[0];
+fox_s.parentNode.insertBefore(foxscript, fox_s);})();
+</script><div id="wrapper">
+<div id="content">
+
+<div id="bigad_display">
+</div>
+
+
+<div id="left_div">
+<div id="webtrick_div">
+<h1 class="page_title">Upload Image to Database and Server using HTML,PHP and MySQL</h1>
+<p class="posttime">Friday, Jul 7, 2017</p>
+
+
+<p class="tuttags">Tags:- <a href="http://talkerscode.com/webtricks.php?category=HTML">HTML</a> <a href="http://talkerscode.com/webtricks.php?category=PHP">PHP</a> <a href="http://talkerscode.com/webtricks.php?category=MySQL">MySQL</a></p>
+
+<div id="linkad_middle">
+
+</div><br>
+
+<p class="explain_para">Image Uploading is very easy there are two ways you can upload the image either to the database or 
+in the server as you like. In this tutorial we use both ways to upload and display the image. All you need to have knowledge
+of HTML, PHP and MySQL.You may also like <a href="http://talkerscode.com/webtricks/upload-image-without-page-refresh-using-ajax-jquery-and-php.php">ajax image upload</a> 
+to upload images without refreshing the webpage.</p>
+
+<div id="middle_aff_display">
+<div class="aff_div">			<p class="aff_title">
+				<a target="_blank" rel="nofollow" href="https://mythemeshop.com/themes/yosemite/?ref=muditjain19894">Yosemite - Personal WordPress Blog Theme Theme</a>
+			</p>
+			<p class="aff_desc">
+				<a target="_blank" rel="nofollow" href="https://mythemeshop.com/themes/yosemite/?ref=muditjain19894">
+					<img src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/Yosemite.jpg">Yosemite is a clean WordPress theme that is inspired by Apple's Yosemite OSX design. With a newsletter plugin, compatibility with MegaMenu and WP Review Pro, as well as being optimized for AdSense, pageviews and readability, you'll see elevated levels of user engagement thanks to Yosemite.. <u>Click Here For More Details</u>
+				</a>
+			</p>
+			</div>
+
+
+</div>
+<br>
+<center><img src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/upload_image.jpg" class="tut_image" alt="Upload Image To database and server"></center>
+
+<br>
+<br>
+<p class="explain_para"><b><u>To Upload The Image In Database it takes only three steps:-</u></b></p>
+<ol>
+<li>Make a HTML form to upload the image</li>
+<li>Connect to the database and store image</li>
+<li>Displaying the Image</li>
+</ol>
+
+<br>
+
+<div id="middle_aff_display">
+<div class="aff_div">			<p class="aff_title">
+				<a target="_blank" rel="nofollow" href="https://mythemeshop.com/themes/best/?ref=muditjain19894">Best - Clean &amp; Beautiful Magazine WordPress Theme Theme</a>
+			</p>
+			<p class="aff_desc">
+				<a target="_blank" rel="nofollow" href="https://mythemeshop.com/themes/best/?ref=muditjain19894">
+					<img src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/Best.jpg">Best is a responsive WordPress theme that features an engaging design that is fully fluid responsive, loads incredibly fast, is fully customizable, and optimized both for search engines and advertisers. It also includes an awesome review system and support for our new MegaMenu plugin!. <u>Click Here For More Details</u>
+				</a>
+			</p>
+			</div>
+<!--
+<div class='aff_div'>
+<p class="aff_title">
+<a target="_blank" rel="nofollow" href="//www.semrush.com/sem/?ref=2017048605&refer_source=&utm_source=berush&utm_medium=promo&utm_campaign=banner">Best SEO Tool For Everyone - SEMRUSH</a>
+</p>
+<p class="aff_desc">
+<a target="_blank" rel="nofollow" href="//www.semrush.com/sem/?ref=2017048605&refer_source=&utm_source=berush&utm_medium=promo&utm_campaign=banner">
+<img src='../deal_images/semrush.png'>SEMRUSH is the best SEO and SEM tools for everyone whether you are a blogger, developer or digital marketing professionals it is trusted by some of the biggest companies in the world like ebay, amazon, disney and many more. <b>Get Free 7 day trial</b> <u>Click Here For More Details</u>
+</a>
+</p>
+</div>
+-->
+
+</div>
+<br>
+
+<p class="explain_para"><b>Step 1.Make a HTML form</b></p>
+<p class="explain_para">We make a HTML form with post method and save it with a name <b>upload.html</b></p>
+<div class="code_div">
+<pre class="prettyprint prettyprinted" style=""><span class="tag"><span class="tag">&lt;html&gt;</span></span><span class="pln">
+</span><span class="tag"><span class="tag">&lt;body&gt;</span></span><span class="pln">
+		
+</span><span class="tag"><span class="tag">&lt;form</span><span class="pln"> </span><span class="atn">method</span><span class="pun">=</span><span class="atv">"POST"</span><span class="pln"> </span><span class="atn">action</span><span class="pun">=</span><span class="atv">"getdata.php"</span><span class="pln"> </span><span class="atn">enctype</span><span class="pun">=</span><span class="atv">"multipart/form-data"</span><span class="tag">&gt;</span></span><span class="pln">
+ </span><span class="tag"><span class="tag">&lt;</span></span><span class="tag">input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"file"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"myimage"</span><span class="tag"><span class="tag">&gt;</span></span><span class="pln">
+ </span><span class="tag"><span class="tag">&lt;</span></span><span class="tag">input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"submit_image"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Upload"</span><span class="tag"><span class="tag">&gt;</span></span><span class="pln">
+</span><span class="tag"><span class="tag">&lt;/form&gt;</span></span><span class="pln">
+
+</span><span class="tag"><span class="tag">&lt;/body&gt;</span></span><span class="pln">
+</span><span class="tag"><span class="tag">&lt;/html&gt;</span></span>
+</pre>
+</div>
+<br>
+<p class="explain_para">We submit the data from this HTML form to <b>getdata.php</b> where the image is going to store in 
+the database.You may also like <a href="http://talkerscode.com/webtricks/preview-image-before-upload-using-javascript.php">preview image before upload</a>.</p>
+
+<br>
+<br>
+
+<p class="explain_para"><b>Step 2.Connect To Database and Store Image</b></p>
+<p class="explain_para">In this step we have to connect to the database to store the image in database. You can connect to any database from which you want to get the data. In this we use sample database named " demo ".</p>
+<div class="code_div">
+<pre class="prettyprint prettyprinted" style=""><span class="tag"><span class="pun">&lt;?</span><span class="pln">php</span></span><span class="pln">
+$host </span><span class="pun">=</span><span class="pln"> </span><span class="str">'localhost'</span><span class="pun">;</span><span class="pln">
+$user </span><span class="pun">=</span><span class="pln"> </span><span class="str">'root'</span><span class="pun">;</span><span class="pln">
+$pass </span><span class="pun">=</span><span class="pln"> </span><span class="str">' '</span><span class="pun">;</span><span class="pln">
+
+mysql_connect</span><span class="pun">(</span><span class="pln">$host</span><span class="pun">,</span><span class="pln"> $user</span><span class="pun">,</span><span class="pln"> $pass</span><span class="pun">);</span><span class="pln">
+
+mysql_select_db</span><span class="pun">(</span><span class="str">'demo'</span><span class="pun">);</span><span class="pln">
+</span><span class="tag"><span class="pun">?&gt;</span></span>
+</pre>
+</div>
+<br>
+<p class="explain_para">To store the image into database you have to use <b>blob</b> datatype of your image 
+column in your table. MySQL uses BLOB to store binary data and images is also a binary data. You can use any kind of 
+BLOB TINYBLOB, BLOB, MEDIUMBLOB, LONGBLOB as per the size of your image.You may also like <a href="http://talkerscode.com/webtricks/upload-image-from-url-using-php.php">upload image from URL using PHP</a>.</p>
+<div class="code_div">
+<pre class="prettyprint prettyprinted" style=""><span class="tag"><span class="pun">&lt;?</span><span class="pln">php</span></span><span class="pln">
+
+$imagename</span><span class="pun">=</span><span class="pln">$_FILES</span><span class="pun">[</span><span class="str">"myimage"</span><span class="pun">][</span><span class="str">"name"</span><span class="pun">];</span><span class="pln"> 
+
+</span><span class="com">//Get the content of the image and then add slashes to it </span><span class="pln">
+$imagetmp</span><span class="pun">=</span><span class="pln">addslashes </span><span class="pun">(</span><span class="pln">file_get_contents</span><span class="pun">(</span><span class="pln">$_FILES</span><span class="pun">[</span><span class="str">'myimage'</span><span class="pun">][</span><span class="str">'tmp_name'</span><span class="pun">]));</span><span class="pln">
+
+</span><span class="com">//Insert the image name and image content in image_table</span><span class="pln">
+$insert_image</span><span class="pun">=</span><span class="str">"INSERT INTO image_table VALUES('$imagetmp','$imagename')"</span><span class="pun">;</span><span class="pln">
+
+mysql_query</span><span class="pun">(</span><span class="pln">$insert_image</span><span class="pun">);</span><span class="pln">
+
+</span><span class="tag"><span class="pun">?&gt;</span></span>
+</pre>
+</div>
+
+<br>
+<br>
+
+<p class="explain_para"><b>Step 3.Displaying the stored Images from database</b></p>
+<p class="explain_para">To display images you have to make two files one is to fetch the image from database and 
+second one is to display the image.You may also like <a href="http://talkerscode.com/webtricks/upload-multiple-images-with-image-preview-using-jquery-ajax-php.php">upload multiple images with preview using jQuery and PHP.</a></p>
+<br>
+<p class="explain_para">This is <b>fetch_image.php</b> file</p>
+<div class="code_div">
+<pre class="prettyprint prettyprinted" style=""><span class="tag"><span class="pun">&lt;?</span><span class="pln">php</span></span><span class="pln">
+
+header</span><span class="pun">(</span><span class="str">"content-type:image/jpeg"</span><span class="pun">);</span><span class="pln">
+
+$host </span><span class="pun">=</span><span class="pln"> </span><span class="str">'localhost'</span><span class="pun">;</span><span class="pln">
+$user </span><span class="pun">=</span><span class="pln"> </span><span class="str">'root'</span><span class="pun">;</span><span class="pln">
+$pass </span><span class="pun">=</span><span class="pln"> </span><span class="str">' '</span><span class="pun">;</span><span class="pln">
+
+mysql_connect</span><span class="pun">(</span><span class="pln">$host</span><span class="pun">,</span><span class="pln"> $user</span><span class="pun">,</span><span class="pln"> $pass</span><span class="pun">);</span><span class="pln">
+
+mysql_select_db</span><span class="pun">(</span><span class="str">'demo'</span><span class="pun">);</span><span class="pln">
+
+$name</span><span class="pun">=</span><span class="pln">$_GET</span><span class="pun">[</span><span class="str">'name'</span><span class="pun">];</span><span class="pln">
+
+$select_image</span><span class="pun">=</span><span class="str">"select * from image_table where imagename='$name'"</span><span class="pun">;</span><span class="pln">
+
+$var</span><span class="pun">=</span><span class="pln">mysql_query</span><span class="pun">(</span><span class="pln">$select_image</span><span class="pun">);</span><span class="pln">
+
+</span><span class="kwd">if</span><span class="pun">(</span><span class="pln">$row</span><span class="pun">=</span><span class="pln">mysql_fetch_array</span><span class="pun">(</span><span class="pln">$var</span><span class="pun">))</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+ $image_name</span><span class="pun">=</span><span class="pln">$row</span><span class="pun">[</span><span class="str">"imagename"</span><span class="pun">];</span><span class="pln">
+ $image_content</span><span class="pun">=</span><span class="pln">$row</span><span class="pun">[</span><span class="str">"imagecontent"</span><span class="pun">];</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+echo $image</span><span class="pun">;</span><span class="pln">
+
+</span><span class="tag"><span class="pun">?&gt;</span></span>
+</pre>
+</div>
+<br>
+<p class="explain_para">Now we want to display the image we make another file <b>display_image.php</b>.</p>
+<div class="code_div">
+<pre class="prettyprint prettyprinted" style=""><span class="tag"><span class="tag">&lt;html&gt;</span></span><span class="pln">
+</span><span class="tag"><span class="tag">&lt;body&gt;</span></span><span class="pln">
+		
+</span><span class="tag"><span class="tag">&lt;form</span><span class="pln"> </span><span class="atn">method</span><span class="pun">=</span><span class="atv">"GET"</span><span class="pln"> </span><span class="atn">action</span><span class="pun">=</span><span class="atv">" "</span><span class="pln"> </span><span class="tag">&gt;</span></span><span class="pln">
+ </span><span class="tag"><span class="tag">&lt;</span></span><span class="tag">input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"file"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"your_imagename"</span><span class="tag"><span class="tag">&gt;</span></span><span class="pln">
+ </span><span class="tag"><span class="tag">&lt;</span></span><span class="tag">input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"display_image"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Display"</span><span class="tag"><span class="tag">&gt;</span></span><span class="pln">
+</span><span class="tag"><span class="tag">&lt;/form&gt;</span></span><span class="pln">
+
+</span><span class="tag"><span class="tag">&lt;/body&gt;</span></span><span class="pln">
+</span><span class="tag"><span class="tag">&lt;/html&gt;</span></span><span class="pln">
+
+
+</span><span class="tag"><span class="pun">&lt;?</span><span class="pln">php</span></span><span class="pln">
+
+$getname </span><span class="pun">=</span><span class="pln"> $_GET</span><span class="pun">[</span><span class="str">' your_imagename '</span><span class="pun">];</span><span class="pln">
+
+echo </span><span class="str">"&lt; img src = fetch_image.php?name="</span><span class="pun">.</span><span class="pln">$getname</span><span class="pun">.</span><span class="str">" width=200 height=200 &gt;"</span><span class="pun">;</span><span class="pln">
+
+</span><span class="tag"><span class="pun">?&gt;</span></span><span class="pln">
+</span></pre>
+</div>
+
+<br>
+<br>
+
+<p class="explain_para"><b><u>To Upload The Image In Server it takes only three steps:-</u></b></p>
+<ol>
+<li>Make a HTML form to upload the image</li>
+<li>Store image path to database and store the image to your server or directory</li>
+<li>Displaying the Image</li>
+</ol>
+<br>
+<br>
+<p class="explain_para"><b>Step 1.Make a HTML form</b></p>
+<p class="explain_para">You can use same HTML form as we made above to upload the image</p>
+<br>
+<br>
+<p class="explain_para"><b>Step 2.Storing image to the Server</b></p>
+<p class="explain_para">In this step we get the image and store the image in directory and store the path of the 
+image with name in database.You may also like <a href="http://talkerscode.com/webtricks/drag-and-drop-image-upload-using-ajax-jquery-and-php.php">drag and drop image upload using jQuery ajax</a>.</p>
+<br>
+<p class="explain_para">This is <b>store_image.php</b> file</p>
+<div class="code_div">
+<pre class="prettyprint prettyprinted" style=""><span class="tag"><span class="pun">&lt;?</span><span class="pln">php</span></span><span class="pln">
+$host </span><span class="pun">=</span><span class="pln"> </span><span class="str">'localhost'</span><span class="pun">;</span><span class="pln">
+$user </span><span class="pun">=</span><span class="pln"> </span><span class="str">'root'</span><span class="pun">;</span><span class="pln">
+$pass </span><span class="pun">=</span><span class="pln"> </span><span class="str">' '</span><span class="pun">;</span><span class="pln">
+
+mysql_connect</span><span class="pun">(</span><span class="pln">$host</span><span class="pun">,</span><span class="pln"> $user</span><span class="pun">,</span><span class="pln"> $pass</span><span class="pun">);</span><span class="pln">
+
+mysql_select_db</span><span class="pun">(</span><span class="str">'demo'</span><span class="pun">);</span><span class="pln">
+
+$upload_image</span><span class="pun">=</span><span class="pln">$_FILES</span><span class="pun">[</span><span class="str">" myimage "</span><span class="pun">][</span><span class="pln"> </span><span class="str">"name"</span><span class="pln"> </span><span class="pun">];</span><span class="pln">
+
+$folder</span><span class="pun">=</span><span class="str">"/xampp/htdocs/images/"</span><span class="pun">;</span><span class="pln">
+
+move_uploaded_file</span><span class="pun">(</span><span class="pln">$_FILES</span><span class="pun">[</span><span class="str">" myimage "</span><span class="pun">][</span><span class="str">" tmp_name "</span><span class="pun">],</span><span class="pln"> </span><span class="str">"$folder"</span><span class="pun">.</span><span class="pln">$_FILES</span><span class="pun">[</span><span class="str">" myimage "</span><span class="pun">][</span><span class="str">" name "</span><span class="pun">]);</span><span class="pln">
+
+$insert_path</span><span class="pun">=</span><span class="str">"INSERT INTO image_table VALUES('$folder','$upload_image')"</span><span class="pun">;</span><span class="pln">
+
+$var</span><span class="pun">=</span><span class="pln">mysql_query</span><span class="pun">(</span><span class="pln">$inser_path</span><span class="pun">);</span><span class="pln">
+</span><span class="tag"><span class="pun">?&gt;</span></span>
+</pre>
+</div>
+
+<br>
+<br>
+
+<p class="explain_para"><b>Step 3.Displaying the Images</b></p>
+<p class="explain_para">To display images you have to get the file name and file path from the database.</p>
+<br>
+<p class="explain_para">This is <b>fetch_image.php</b> file</p>
+<div class="code_div">
+<pre class="prettyprint prettyprinted" style=""><span class="tag"><span class="pun">&lt;?</span><span class="pln">php</span></span><span class="pln">
+$host </span><span class="pun">=</span><span class="pln"> </span><span class="str">'localhost'</span><span class="pun">;</span><span class="pln">
+$user </span><span class="pun">=</span><span class="pln"> </span><span class="str">'root'</span><span class="pun">;</span><span class="pln">
+$pass </span><span class="pun">=</span><span class="pln"> </span><span class="str">' '</span><span class="pun">;</span><span class="pln">
+
+mysql_connect</span><span class="pun">(</span><span class="pln">$host</span><span class="pun">,</span><span class="pln"> $user</span><span class="pun">,</span><span class="pln"> $pass</span><span class="pun">);</span><span class="pln">
+
+mysql_select_db</span><span class="pun">(</span><span class="str">'demo'</span><span class="pun">);</span><span class="pln">
+
+$select_path</span><span class="pun">=</span><span class="str">"select * from image_table"</span><span class="pun">;</span><span class="pln">
+
+$var</span><span class="pun">=</span><span class="pln">mysql_query</span><span class="pun">(</span><span class="pln">$select_path</span><span class="pun">);</span><span class="pln">
+
+</span><span class="kwd">while</span><span class="pun">(</span><span class="pln">$row</span><span class="pun">=</span><span class="pln">mysql_fetch_array</span><span class="pun">(</span><span class="pln">$var</span><span class="pun">))</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+ $image_name</span><span class="pun">=</span><span class="pln">$row</span><span class="pun">[</span><span class="str">"imagename"</span><span class="pun">];</span><span class="pln">
+ $image_path</span><span class="pun">=</span><span class="pln">$row</span><span class="pun">[</span><span class="str">"imagepath"</span><span class="pun">];</span><span class="pln">
+ echo </span><span class="str">"img src="</span><span class="pun">.</span><span class="pln">$image_path</span><span class="pun">.</span><span class="str">"/"</span><span class="pun">.</span><span class="pln">$image_name</span><span class="pun">.</span><span class="str">" width=100 height=100"</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="tag"><span class="pun">?&gt;</span></span>
+</pre>
+</div>
+<br>
+<br>
+<p class="explain_para">That's all, this is how to upload image to database or in a directory with the help of HTML, PHP and MySQL. You can 
+customize this code further as per your requirement. And please feel free to give comments on this tutorial.
+</p>
+</div><!--end of webtrick_div-->
+
+<div id="comment_div">
+<div id="tut_feedburner_div">
+<form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#39;https://feedburner.google.com/fb/a/mailverify?uri=Talkerscodecom-WebDevelopmentBlog&#39;, &#39;popupwindow&#39;, &#39;scrollbars=yes,width=550,height=520&#39;);return true">
+<p class="feed_head">Join Us With Our 21000+ Subscribers And Get Our Latest Tutorials Update Via Email</p>
+<input type="text" name="email" placeholder="Email Id">
+<input type="hidden" value="Talkerscodecom-WebDevelopmentBlog" name="uri">
+<input type="hidden" name="loc" value="en_US">
+<input type="submit" value="SUBSCRIBE">
+</form>
+</div>
+
+<div id="latest_tutorial_div"><h2>Latest Tutorials</h2>			<li><a href="http://talkerscode.com/webtricks/simple%20and%20best%20pagination%20with%20PHP,MySQL.php" class="latest_tut_links"><img src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/pagination.jpg">Simple And Best Pagination With PHP, MySQL</a></li>
+						<li><a href="http://talkerscode.com/webtricks/reduce%20the%20size%20and%20make%20thumbnail%20of%20any%20image%20before%20uploading%20using%20PHP.php" class="latest_tut_links"><img src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/compress_image.jpg">Compress,Reduce,Resize The Image Before Uploading To Database With PHP</a></li>
+						<li><a href="http://talkerscode.com/webtricks/upload%20image%20to%20database%20and%20server%20using%20HTML,PHP%20and%20MySQL.php" class="latest_tut_links"><img src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/upload_image.jpg">Upload Image to Database and Server using HTML,PHP and MySQL</a></li>
+						<li><a href="http://talkerscode.com/webtricks/add-and-remove-textbox-using-javascript.php" class="latest_tut_links"><img src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/add_remove_textbox.jpg">Add And Remove Textbox Using JavaScript</a></li>
+						<li><a href="http://talkerscode.com/webtricks/image-zoom-in-on-hover-using-css3.php" class="latest_tut_links"><img src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/image_zoomin.jpg">Image Zoom In On Hover Using CSS3</a></li>
+						<li><a href="http://talkerscode.com/webtricks/simple-parallax-effect-on-scrolling-using-jquery-and-css.php" class="latest_tut_links"><img src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/parallax_effect.jpg">Simple Parallax Effect On Scrolling Using jQuery And CSS</a></li>
+			</div>
+
+<div id="disqus_thread"><iframe id="dsq-app1" name="dsq-app1" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/saved_resource.html" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 2116px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe></div> 
+<script>  
+var disqus_config = function () 
+{
+this.page.url = 'http://talkerscode.com/webtricks/upload image to database and server using HTML,PHP and MySQL.php'; // Replace PAGE_URL with your page's canonical URL variable 
+this.page.identifier = '2'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable 
+};
+(
+function() 
+{
+var d = document, s = d.createElement('script'); s.src = '//talkerscode.disqus.com/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s); 
+})(); 
+</script> 
+<noscript>
+Please enable JavaScript to view the &lt;a href="https://disqus.com/?ref_noscript" rel="nofollow"&gt;comments powered by Disqus.&lt;/a&gt;
+</noscript>
+</div><!--end of comment_div-->
+
+</div><!--end of left_div-->
+
+<div id="right_div">
+<div id="newsletter_div">
+</div><!--end of newsletter_div-->
+
+<div id="related_link_div"><h2>Related Tutorials</h2>			<p class="related_links"><a href="http://talkerscode.com/webtricks/reduce%20the%20size%20and%20make%20thumbnail%20of%20any%20image%20before%20uploading%20using%20PHP.php"><img src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/compress_image.jpg">Compress,Reduce,Resize The Image Before Uploading To Database With PHP</a></p>
+						<p class="related_links"><a href="http://talkerscode.com/webtricks/upload-image-from-url-using-php.php"><img src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/upload_image_from_url.jpg">Upload Image From URL Using PHP</a></p>
+						<p class="related_links"><a href="http://talkerscode.com/webtricks/load-more-results-from-database-using-jquery-ajax-php-mysql.php"><img src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/load_result.jpg">Create Load More Results From Database System Using jQuery,Ajax,PHP and MySQL</a></p>
+						<p class="related_links"><a href="http://talkerscode.com/webtricks/preview-image-before-upload-using-javascript.php"><img src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/preview_image_before_upload.jpg">Preview Image Before Upload Using JavaScript</a></p>
+						<p class="related_links"><a href="http://talkerscode.com/webtricks/drag-and-drop-image-upload-using-ajax-jquery-and-php.php"><img src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/drag_and_drop.jpg">Drag And Drop Image Upload Using jQuery Ajax And PHP</a></p>
+						<p class="related_links"><a href="http://talkerscode.com/webtricks/upload-image-without-page-refresh-using-ajax-jquery-and-php.php"><img src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/ajax_image_upload.jpg">Upload Image Without Page Refresh Using Ajax,jQuery And PHP</a></p>
+						<p class="related_links"><a href="http://talkerscode.com/webtricks/upload-multiple-images-with-image-preview-using-jquery-ajax-php.php"><img src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/multiple_images_upload.jpg">Upload Multiple Images With Image Preview Using jQuery,Ajax And PHP</a></p>
+						<p class="related_links"><a href="http://talkerscode.com/webtricks/display-text-over-image-using-html-and-css.php"><img src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/text_over_image.jpg">Display Text Over Image Using HTML And CSS</a></p>
+						<p class="related_links"><a href="http://talkerscode.com/webtricks/full-page-background-image-using-html-and-css.php"><img src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/fullpage_background_image.jpg">Full Page Background Image Using HTML And CSS</a></p>
+						<p class="related_links"><a href="http://talkerscode.com/webtricks/export-mysql-data-to-excel-using-php-and-html.php"><img src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/mysql_to_excel.jpg">Export MySQL Data To Excel Using PHP And HTML</a></p>
+						<p class="related_links"><a href="http://talkerscode.com/webtricks/check%20username%20and%20email%20availability%20from%20database%20using%20ajax.php"><img src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/user_available.jpg">Check UserName And Email Availability From Database Using Ajax</a></p>
+			</div>
+</div><!--end of right_div-->
+
+
+
+</div><!--end of content-->
+</div><!--end of wrapper-->
+<div id="footerwrapper">
+<div id="footer">
+<center>
+<a href="http://talkerscode.com/index.php">Home</a>
+<a href="http://talkerscode.com/aboutus.php">About Us</a>
+<a href="http://talkerscode.com/contactus.php">Contact Us</a>
+<a href="http://talkerscode.com/subscribe.php">Subscribe</a>
+<a href="http://talkerscode.com/alltutorials.php">All Tutorials</a>
+<a href="http://talkerscode.com/sitemap.xml">Sitemap</a>
+<a href="http://talkerscode.com/rss.xml">RSS</a>
+</center>
+<p>© 2015-2018 All Rights Reserved To TalkersCode.com</p>
+</div>
+<div><!--end of footer wrapper-->
+
+
+<!--Google Analytics-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61824078-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</div></div><iframe src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/saved_resource(1).html" style="width: 0px; height: 0px; border: 0px; display: none;" frameborder="0"></iframe><div class="foxpush_thanksbox_overlay" id="foxpush_thanksbox_overlay" style="display: none !important;"><div class="foxpush_thanksbox"><div class="foxpush_overlay_cover"><span class="close" id="foxpush_close_overlay"></span><img src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/default_icon.jpg" alt=""></div><div class="foxpush_overlay_content"><h3>Thanks for subscribing.</h3><a href="http://talkerscode.com/webtricks/upload%20image%20to%20database%20and%20server%20using%20HTML,PHP%20and%20MySQL.php#" class="foxpush_btn foxpush_allow" id="foxpush_subscribe">Close</a></div><span class="foxpush_copyright"><a href="https://www.foxpush.com/?ref=talkerscodecom" target="_blank">Powered by FoxPush</a></span></div></div><iframe src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/http_native.html" visibility="hidden" style="width: 0px; height: 0px; border: 0px; display: none;"></iframe><iframe style="display: none;" src="./Upload Image to Database and Server using HTML,PHP and MySQL On TalkersCode.com_files/saved_resource(2).html"></iframe></body></html>

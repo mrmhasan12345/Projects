@@ -1,0 +1,366 @@
+#wrapper
+{
+	clear:both;	
+	float:left;
+	width:100%;
+	margin:0px auto;
+	padding:0px;
+}
+#content
+{
+width:995px;
+margin:0px auto;
+padding:0px;
+}
+#content *
+{
+font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;	
+}
+#left_div
+{
+	margin-top:50px;	
+	float:left;
+	width:640px;
+	margin-left:5px;
+}
+#webtrick_div
+{
+width:100%;
+float:left;
+background-color:white;
+box-sizing:border-box;
+padding:20px;
+}
+#webtrick_div .page_title
+{
+color:#424242;
+font-size:38px;
+}
+#webtrick_div .posttime
+{
+	margin-top:10px;
+	color:#A4A4A4;
+	font-size:15px;
+	font-style:italic;
+}
+#webtrick_div .tuttags
+{
+margin-top:10px;
+margin-bottom:40px;
+color:#6E6E6E;
+font-size:15px;
+}
+#webtrick_div .tuttags a
+{
+	color: #424242;
+    text-decoration: none;
+    font-size: 13px;
+    background-color: #D8D8D8;
+    padding: 5px;
+    font-weight: bold;
+}
+#webtrick_div .demolink
+{
+	clear:both;
+	float:left;	
+	margin-top:20px;
+	padding:15px;
+	padding-left:50px;
+	padding-right:50px;
+	font-size:20px;
+	text-decoration:none;
+	color:white;
+	margin-left:200px;
+	background-color:#585858;
+	border-radius:4px;
+	border-bottom:4px solid #424242;
+}
+#webtrick_div .tut_image
+{
+	width:95%;
+	height:315px;
+	margin:0px;
+	padding:7px;
+	margin-top:40px;
+	border:1px solid silver;
+}
+#webtrick_div .explain_para
+{
+	color:#585858;
+	font-size: 17px;
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	line-height: 1.8em;
+	word-spacing: 8px;
+}
+#webtrick_div .explain_para a
+{
+	color:#176092;
+	text-decoration:none;
+}
+#webtrick_div .explain_para a:hover
+{
+	text-decoration:underline;
+}
+#webtrick_div ol,#webtrick_div ul
+{
+	color:#585858;
+	margin-top:20px;
+}
+#webtrick_div ol,#webtrick_div ul li
+{
+	line-height: 1.3em;
+	word-spacing:3px;
+	margin-left:25px;
+}
+#webtrick_div .code_div pre
+{
+	border:none;
+	background-color:#eee;
+	padding:10px;
+	line-height: 1.6em;
+	word-spacing:4px;
+	overflow:auto;
+	margin-top:10px;
+	font-family: Menlo, Consolas, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, monospace;
+}
+#webtrick_div .code_div pre *
+{
+	font-family: Menlo, Consolas, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, monospace;
+}
+#webtrick_div #second_middlead_display
+{
+	text-align:center;
+}
+#right_div
+{
+	float:right;
+	width:300px;
+	margin-top:50px;
+	margin-right:5px;
+}
+#content #newsletter_div
+{
+float:right;
+width:300px;
+}
+#related_link_div
+{
+clear:both;
+float:left;
+width:300px;
+box-sizing:border-box;
+background-color:white;
+}
+#related_link_div h2
+{
+	background-color:#585858;
+	color:white;
+	padding:20px;
+	font-size:20px;
+	box-sizing:border-box;
+}
+#related_link_div p
+{
+float:left;
+width:300px;
+overflow:hidden;
+margin-top:20px;
+box-sizing:border-box;
+padding:15px;
+border-bottom:1px dashed #585858;
+}
+#related_link_div a
+{
+text-decoration:none;
+color:#585858;
+font-size:16px;
+font-weight:bold;
+}
+#related_link_div .related_links img
+{
+	width:100%;
+	margin-bottom:10px;
+	text-align:center;
+}
+#related_link_div .related_links:hover
+{
+color:red;
+}
+#comment_div
+{
+margin-top:30px;
+padding:0px;
+width:640px;
+float:left;
+box-sizing:border-box;
+margin-bottom:50px;
+}
+#content #tut_feedburner_div
+{
+	clear:both;
+	box-sizing:border-box;
+	background-color:#585858;
+	text-align:center;
+	padding:20px;
+	height:250px;
+}
+#content #tut_feedburner_div *
+{
+	font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;	
+}
+#content #tut_feedburner_div .feed_head
+{
+color:white;
+font-size:30px;
+}
+#content #tut_feedburner_div input[type="text"]
+{
+	margin-top:40px;
+	width:350px;
+	height:50px;
+	padding-left:10px;
+	border:none;
+	font-size:15px;
+	background-color:#424242;
+	color:white;
+}
+#content #tut_feedburner_div input[type="submit"]
+{
+	margin-top:40px;
+	width:150px;
+	height:50px;
+	background-color:#6E6E6E;
+	border:none;
+	color:white;
+	font-weight:bold;
+	font-size:15px;
+}
+#comment_div #latest_tutorial_div
+{
+	float:left;
+	background-color:white;
+	box-sizing:border-box;
+	margin-top:20px;
+	padding:20px;
+	width:100%;
+}
+#comment_div #latest_tutorial_div h2
+{
+	color:#585858;
+}
+#comment_div #latest_tutorial_div li
+{
+float:left;
+width:190px;
+max-height:250px;
+min-height:200px;
+margin:10px;
+margin-left:0px;
+box-sizing:border-box;
+list-style-type:none;
+overflow:hidden;
+}
+#comment_div #latest_tutorial_div .latest_tut_links
+{
+text-decoration:none;
+color:#585858;
+font-size:15px;
+font-weight:bold;
+}
+#comment_div #latest_tutorial_div .latest_tut_links:hover
+{
+	color:red;
+}
+#comment_div #latest_tutorial_div .latest_tut_links img
+{
+	width:210px;
+	margin-bottom:10px;
+}
+
+@media only screen and (max-width: 960px)
+{
+#content #newsletter_div
+{
+clear:both;
+float:none;
+width:98%;
+margin-left:1%;
+}
+#right_div
+{
+	display:none;
+}
+#comment_div #tut_feedburner_div
+{
+	display:none;
+}
+#comment_div #latest_tutorial_div
+{
+	display:none;
+}
+#webtrick_div #second_middlead_display
+{
+	display:none;
+}
+#wrapper,#content,#left_div
+{
+width:100%;
+}
+#left_div
+{
+width:100%;
+margin-left:0px;
+}
+#webtrick_div .page_title
+{
+	font-size:30px;
+}
+#webtrick_div .demolink
+{
+	text-align:center;
+	margin-left:0px;
+	padding:10px;
+	padding-left:7%;
+	padding-right:7%;
+}
+#webtrick_div .tut_image
+{
+width:90%;
+max-width:450px;
+}
+#webtrick_div #second_middlead_display
+{
+	width:100%;
+	height:200px;
+	overflow:hidden;
+}
+#related_link_div
+{
+width:100%;
+margin-left:0px;
+padding:0px;
+}
+#related_link_div p
+{
+width:100%;
+text-align:left;
+overflow:visible;
+padding:10px;
+}
+#related_link_div .related_links
+{
+font-weight:normal;
+display:block;
+}
+#related_link_div img
+{
+visibility:hidden;
+display:none;
+}
+#comment_div
+{
+width:100%;
+margin-left:0px;
+}
+
+}

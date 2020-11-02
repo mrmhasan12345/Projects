@@ -1,0 +1,28 @@
+
+<!-- saved from url=(0051)https://talkerscodecom.foxpush.net/http_native.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script type="text/javascript">
+
+   var fox_object = {};
+   if(Notification.permission === "granted")
+   {
+      fox_object.state = 'allowed';
+
+      if (localStorage.getItem("foxpush_user_token") !== null) {
+         fox_object.token = localStorage.getItem("foxpush_user_token");
+      }
+      parent.postMessage(JSON.stringify(fox_object),"*");
+   }
+   else
+   {
+      fox_object.state = 'prompt';
+      parent.postMessage(JSON.stringify(fox_object),"*");
+
+      Notification.requestPermission(function (state)
+      {
+         fox_object.state = state;
+         parent.postMessage(JSON.stringify(fox_object),"*");
+      });
+   }
+
+</script>
+</head><body></body></html>
